@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<head>
+  <title>alL</title>
+</head>
+<style>
+.w4-navi{
+  background: navi;
+}
+rt1{
+  color:#721c24;
+  background-color:#f8d7da;
+  border-color:#f5c6cb
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">All_ternatyva</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.w3schools.com/bootstrap4/">Оригінал</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Bootstrap 4 Туторіал
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#section1">Створіть свою першу сторінку</a>
+          <a class="dropdown-item" href="#section2">Система таблиць в Bootstrap 4</a>
+          <a class="dropdown-item" href="#section3">Текст та його властивості</a>
+          <a class="dropdown-item" href="#section4">Кольори</a>
+          <a class="dropdown-item" href="#tabel">Таблиці</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="slova/index_brends.html">Про сайт</a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <div id="section1" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+    <h1>Що таке Bootstrap?</h1>
+    <ul>
+      <li>Bootstrap це безкоштовна бібліотека для прстого та швидкого створення сайтів.</li>
+      <li>Bootstrap охоплює більшість шаблонів дизайну HTML та CSS кнопки, зображення навігацію та плагіни JavaScript.</li>
+      <li>Bootstrap 4 повністю вільний продукт.</li>
+    </ul>
+    <br>
+    <hr weight="1" color="grey">
+    <h1>Чому використовують Bootstrap?</h1>
+    <ul>
+      <li><b>Простиий для використання:</b> адже потрiбні тыльки базовы знання HTML та  CSS. </li>
+      <li><b>Адаптивність:</b>  Bootstrap включає адаптивний CSS для підлаштування під розширення  телефонів,планшетів та повноцінних комп*ютерів</li>
+      <li><b>Розповсюдженість:</b> Bootstrap підтримується всіма сучасними браузерами.</li>
+    </ul>
+    <hr weight="1" color="grey">
+    <h1>Історія Bootstrap.</h1>
+    <ul>
+      <li>Авторами Bootstraр є Марк Отто та Джейкоб Торнтон,open source версія була завантажена на GihHub у серпні 2011. </li>
+      <li><b>В червні 2014 Bootstrap став продуктом №1 на Github.</b></li>
+    </ul>
+    <hr weight="1" color="grey">
+    <div class="alert alert-success">
+      <h1><b>Де дістати Bootstrap?</b></h1>
+      <p>Завантажити host Bootstrap можна на сайті <a href="http://getbootstrap.com/getting-started/" target="getbootstrap.com">getbootstrap.com</a>,
+        на ньому ж же знайдете офіційну документацію</p>
+      </div>
+
+      <hr weight="1" color="grey">
+      <div class="alert alert-info">
+        <h1><strong>Поширення засобами CDN</strong></h1>
+        <p>Якщо  не хочете завантажувати host Bootstrap Ви зажди можете використати CDN дистрибуцію.</p>
+
+        <div class="alert alert-secondary">
+          <h3>MaxCDN:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="commentcolor" style="color:green">&lt;!-- Latest compiled and minified CSS --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <br><span class="commentcolor" style="color:green">&lt;!-- jQuery library --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <br><span class="commentcolor" style="color:green">&lt;!-- Latest compiled JavaScript --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+          </div>
+        </div>
+        <hr weight="1" color="grey">
+        <div class="alert alert-warning">
+          <h2><strong>Kілька слів за  jQuery </strong></h2>
+          <p>Bootstrap викоритстовує бібліотеку jQuery для JavaScript доповнень (моделей, барів, анімацій і т.д.)
+            Якщо Ви використовуєте тільки CSS частину Bootstrap підключати jQuery не обов'язково.</p>
+          </div>
+          <div class="container">
+            <h2>Створіть свою першу сторінку використовуючи Bootstrap.</h2>
+            <p>Bootstrap використовує HTML та  CSS елементи, які вимагають HTML5 стандарт.</p>
+            <p><b>1.Створіть HTML шаблон. </b></p>
+            <p>Завжди використовуйе HTML5 стандарт разом з атирибутом "lang" при створенні нової сторінки.</p>
+            <div class="alert alert-secondary">
+              <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+              </div>
+              <p><b>2. Адаптивний дизайн</b></p>
+              <p>Bootstrap 3 проектується, щоб бути адаптивним до мобільних пристроїв. Стандарті розширення екраів вже додані до бібліотеки.
+                <br>Для забезпечення нележної роботи потірбно додани наступний тег до змісту <f1 style="color:red;">"head"</f1></p>
+                <div class="alert alert-secondary">
+                  <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width, initial-scale=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                  </div>
+                  <p>width=device-width це частина налаштувань розміру сторінки до розширення екрану пристрою.</p>
+                  <p>initial-scale=1 встановлює початковий зуи при завантажуванні сторінки.</p>
+                  <p><b>3. Контейнери</b></p>
+                  <p>Bootstrap 4 обовязково вимагає роміщенні обєктів сайту в контейнерах.<br>
+                    Існує два види контейнерів</p>
+                    <ul>
+                      <li>Адаптивний .container </li>
+                      <li>Незмінний .container-fluid, який займає весь простір при перегляді.</li>
+                      </ul
+                      <div class="w3-row-padding" style="margin:16px -16px 0 -16px">
+                        <div class="w3-half">
+                          <div class="w3-padding w3-padding-16" style="border:4px solid #f1f1f1">
+                            <div style="height:100px;width:80%;margin:auto;background:#d9d9d9" class="w3-display-container"><span class="w3-display-middle">.container</span></div>
+                          </div>
+                        </div>
+                        <div class="w3-half">
+                          <div class="w3-padding-16" style="border:4px solid #f1f1f1">
+                            <div style="height:100px;width:100%;background:#d9d9d9" class="w3-center w3-display-container"><span class="w3-display-middle">.container-fluid</span></div>
+                          </div>
+                        </div>
+                        <hr weight="1" color="grey">
+                        <h2>Дві основні сторінки Bootstrap.</h2>
+                        <p>Наступний приклад показує код для основної сторінки Bootstrap (з адаптивним фіксованим width контейнером):</p>
+                        <div class="alert alert-secondary">
+                          <div class="w3-code notranslate htmlHigh">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bootstrap
+                            4 Example<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width, initial-scale=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            &nbsp;
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            &nbsp;
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="container"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Bootstrap Page<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is some text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                          </div>
+                          <p>Наступний приклад показує код для основної сторінки Bootstrap (з повним width контейнером):</p>
+                          <div class="alert alert-secondary">
+                            <div class="w3-code notranslate htmlHigh">
+                              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Bootstrap
+                              4 Example<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width, initial-scale=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                              &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                              &nbsp;
+                              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="container-fluid"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Bootstrap Page<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is some text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                              <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+
+<hr weight="1" color="grey">
+</div>
+<div id="section2" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Система таблиць в Bootstrap 4</h1>
+  <p>Система заснована на контейнерах які можуть бути розміщені в 12 колоноках.<br>
+  Якщо ви не хочете користуватися усіма 12 колоноками індивідуально, ви можете групувати колонки разом, щоб створити ширші колонки:</p>
+  <div class="table-responsive">
+    <table bgcolor="white" border="1px" width="100%" style="padding: 10px">
+    <tr>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+      <td>span 1</td>
+    </tr>
+    <tr>
+      <td colspan="4">&nbsp;span 4</td>
+      <td colspan="4">&nbsp;span 4</td>
+      <td colspan="4">&nbsp;span 4</td>
+    </tr>
+    <tr>
+      <td colspan="4">span 4</td>
+      <td colspan="8">span 8</td>
+    </tr>
+    <tr>
+      <td colspan="6">span 6</td>
+      <td colspan="6">span 6</td>
+    </tr>
+    <tr>
+      <td colspan="12">span 12</td>
+    </tr>
+    </table>
+  </div>
+  <br>
+  <p>Дана система є адаптивною і автоматично змінює відображення залежно від розміру екрану
+  <br>Переконайтеся, що в сумі використовуєте12 або менше (це не потрібно, щоб ви користувалися усіма 12 доступними колоноками).
+  <hr weight="1" color="grey">
+  <p>Класифікація колонок:</p>
+  <ul>
+    <li><rt1>.col-</rt1> (дуже малі пристрої - з розширенням менше 576px)</li>
+    <li><rt1>.col-sm-</rt1> (малі пристрої - з розширенням рівним або більшим 576px)</li>
+    <li><rt1>.col-md-</rt1> (середні пристрої - з розширенням рівним або більшим 768px)</li>
+    <li><rt1>.col-lg-</rt1> (великі пристрої - з розширенням рівним або більшим 992px))</li>
+    <li><rt1>.col-xl-</rt1> (дуже великі пристрої - з розширенням рівним або більшим 1200px)</li>
+  </ul>
+  <p>Дані класи можна комбінувати, щоб створити більше динамічних і гнучких розташувань</p>
+  <div class="alert alert-danger">
+    <strong>Увага!</strong> Якщо ви бажаєте встановити ту ж ширину для sm і md, вам  треба конкретизувати тільки sm.
+  </div>
+  <hr weight="1" color="grey">
+  <h2>Базова структура таблиці Bootstrap.</h2>
+  <p>Приклад коду сторінки з таблицею</p>
+    <div class="alert alert-secondary">
+   <div class="w3-code notranslate htmlHigh">
+     <span class="commentcolor" style="color:green">&lt;!-- Control the column width, and how they should appear on different
+     devices --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-*-*"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-*-*"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-*-*"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-*-*"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-*-*"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+     <br><span class="commentcolor" style="color:green">&lt;!-- Or let Bootstrap automatically handle the layout --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+  </div>
+      <p>Перший приклад: створюємо рядок <rt1>div class="row"</rt1>, тоді додайтємо бажане число колонок (вказуємо з тим, що відповідає потрібному .col-*-* класу).
+        Перша зірка (*) вказує тип: sm, md, lg або xl, а друга зірка вказує номер, який повинен позначити ширину для кожного ряду.
+      </p>
+      <br>
+      <p>Другий приклад: замість вказування кількості колонок можна вказати розмір у % </p>
+      <p>Нижче ми зібрали деякі приклади основного Bootstrap розташування.</p>
+      <hr weight="1" color="grey">
+      <h2>Три рівні колонки</h2>
+      <p>Наступний приклад показує, як створити трирівні колонки, на усіх пристроях:</p>
+      <div class="alert alert-secondary">
+        <div class="w3-code notranslate htmlHigh">
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+      </div>
+      <hr weight="1" color="grey">
+      <h2>Адаптивні колонки</h2>
+      <br>
+      <div class="row test" style="bgcolor: #cccccc">
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+      <div class="col-sm-3">.col-sm-3</div>
+    </div>
+      <br>
+      <p>Наступний приклад показує, як створити чотири адаптивні колонки колонки, що вміщуються на великих робочих столах. На мобільних пристроях,розширення яких менше ніж 576px, колонки автоматично змінять порядок свого відображення:</p>
+      <div class="alert alert-secondary">
+        <div class="w3-code notranslate htmlHigh">
+         <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col-sm-3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col-sm-3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col-sm-3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col-sm-3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+        </div>
+        <hr weight="1" color="grey">
+        <h2>Дві нерівні адаптивні колонки</h2>
+        <div class="row test">
+          <div class="col-sm-4">.col-sm-4</div>
+          <div class="col-sm-8">.col-sm-8</div>
+        </div>
+        <p>Наступний приклад показує, як отримати дві адаптиіні колонки, що починаються з таблиць і підлаштовуються до великих робочих столів:</p>
+        <div class="alert alert-secondary">
+          <div class="w3-code notranslate htmlHigh">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col-sm-4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>.col-sm-8<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+        </div>
+        <hr weight="1" color="grey">
+</div>
+
+<div id="section3" class="container-fluidbg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Текст та його властивості в Bootstrap 4</h1>
+  <p>За промовчуванням Bootstrap 4  використовує розмір шрифту 16px, та інтервал 1.5.</p>
+  <p>Стандартні шрифти сімї "Helvetica Neue" -  Helvetica, Arial, sans-serif.</p>
+  <p>Окрім того всі <p> елементи мають верхній відступ: 0 та нижній відступ 16px.</p>
+  <hr weight="1" color="grey">
+  <h2>h1-h6</h2>
+  <p>Bootstrap 4 стилі HTML заголовків (h1 - h6) відрізняються своїми розмірами від стандартних.</p>
+    <div class="alert alert-secondary">
+       <div class="w3-white w3-padding notranslate fix">
+            <h1>h1 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(2.5rem = 40px)</span></h1>
+            <h2>h2 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(2rem = 32px)</span></h2>
+            <h3>h3 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.75rem = 28px)</span></h3>
+            <h4>h4 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.5rem = 24px)</span></h4>
+            <h5>h5 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1.25rem = 20px)</span></h5>
+            <h6>h6 Bootstrap heading <span style="margin-left:10px;font-size:16px;font-weight:normal;color:#888">(1rem = 16px)</span></h6>
+        </div>
+    </div>
+    <hr weight="1" color="grey">
+    <h2>Відображення заголовків</h2>
+    <p>Відображення заголовків використовує 4 маштаби екранів, залежно від розширення</p>
+    <div class="alert alert-secondary">
+      <div class="w3-white w3-padding notranslate">
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+            <h1 class="display-3">Display 3</h1>
+            <h1 class="display-4">Display 4</h1>
+      </div>
+    </div>
+    <hr weight="1" color="grey">
+    <h2>/small/</h2>
+    <p>В Bootstrap 4 є <rt1>/small/</rt1> елемент для відображення, вторинного тексту: </p>
+    <div class="alert alert-secondary">
+      <div class="w3-white w3-padding notranslate fix">
+            <h1>h1 heading <small>secondary text</small></h1>
+            <h2>h2 heading <small>secondary text</small></h2>
+            <h3>h3 heading <small>secondary text</small></h3>
+            <h4>h4 heading <small>secondary text</small></h4>
+            <h5>h5 heading <small>secondary text</small></h5>
+            <h6>h6 heading <small>secondary text</small></h6>
+      </div>
+    </div>
+    <hr weight="1" color="grey">
+    <h2>/mark/</h2>
+    <p>В Bootstrap 4 є <rt1>/mark/</rt1> елемент з жовтим кольором фону і деяким заповненням: </p>
+    <div class="alert alert-secondary">
+      <div class="w3-white w3-padding notranslate fix">
+            <p>Use the mark element to <mark style="background-color:#fcf8e3;padding:.2em;">highlight</mark> text.</p>
+      </div>
+    </div>
+    <hr weight="1" color="grey">
+
+    <h2>/abbr/</h2>
+    <p>В Bootstrap 4 є <rt1>/abbr/</rt1> eлемент з пунктирним низом межі:</p>
+    <div class="alert alert-secondary">
+      <div class="w3-white w3-padding notranslate fix">
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+      </div>
+    </div>
+    <hr weight="1" color="grey">
+
+    <h2>/blockquote/</h2>
+    <p>Додайте .blockquote клас /blockquote/ вказуючи джерело вмісту: </p>
+      <div class="alert alert-secondary">
+        <div class="w3-white w3-padding w3-margin-bottom notranslate fix">
+        <blockquote class="blockquote">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <br><footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+        </div>
+      </div>
+    <hr weight="1" color="grey">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div id="section4" class="container-fluidbg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Кольори</h1><br>
+  <h2>Кольори тексту в Bootstrap</h2>
+  <p>Bootstrap 4 містить в собі готові класи для зміни кольору тексту. Наприклад .text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body .text-light</p>
+  <div class="alert alert-secondary">
+    <div class="w3-white w3-padding notranslate fix">
+    <p class="text-muted" style="margin-bottom:8px">This text is muted.</p>
+    <p class="text-primary" style="margin-bottom:8px">This text is important.</p>
+    <p class="text-success" style="margin-bottom:8px">This text indicates success.</p>
+    <p class="text-info" style="margin-bottom:8px">This text represents some information.</p>
+    <p class="text-warning" style="margin-bottom:8px">This text represents a warning.</p>
+    <p class="text-danger" style="margin-bottom:8px">This text represents danger.</p>
+    <p class="text-secondary" style="margin-bottom:8px">Secondary text.</p>
+    <p class="text-dark" style="margin-bottom:8px">Dark grey text.</p>
+    <p class="text-body" style="margin-bottom:8px">Body text.</p>
+    <p class="text-light">Light grey text.</p>
+    </div>
+    <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself »</a>
+  </div>
+  <p>Також дані класи можна використати до посилань:</p>
+  <div class="alert alert-secondary">
+    <div class="w3-white w3-padding notranslate fix">
+    <a href="javascript:void(0)" class="text-muted linkborder">Muted link.</a>
+    <a href="javascript:void(0)" class="text-primary linkborder">Primary link.</a>
+    <a href="javascript:void(0)" class="text-success linkborder">Success link.</a>
+    <a href="javascript:void(0)" class="text-info linkborder">Info link.</a>
+    <a href="javascript:void(0)" class="text-warning linkborder">Warning link.</a>
+    <a href="javascript:void(0)" class="text-danger linkborder">Danger link.</a>
+    <a href="javascript:void(0)" class="text-secondary linkborder">Secondary link.</a>
+    <a href="javascript:void(0)" class="text-dark linkborder">Dark grey link.</a>
+    <a href="javascript:void(0)" class="text-body linkborder">Body/black link.</a>
+    <a href="javascript:void(0)" class="text-light linkborder">Light grey link.</a>
+    </div>
+    <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors_links&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself »</a>
+  </div>
+  <p>Також можна додати 50% затемнення або освітлення фону за допомогою тегів .text-black-50 or .text-white-50 classes:</p>
+  <div class="aler alert-secondary">
+    <div class="w3-white w3-padding notranslate fix">
+      <p class="text-black-50">Black text with 50% opacity on white background</p>
+      <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+    </div>
+    <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors_opacity&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself »</a>
+  </div>
+  <hr weight="1" color="grey">
+  <h2>Колір фону</h2>
+  <p>Класи кольору фону: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark, .bg-light.</p>
+  <div class="alert alert-secondary">
+    <div class="w3-white w3-padding notranslate fix">
+    <p class="bg-primary text-white" style="margin-bottom:16px">This text is important.</p>
+    <p class="bg-success text-white" style="margin-bottom:16px">This text indicates success.</p>
+    <p class="bg-info text-white" style="margin-bottom:16px">This text represents some information.</p>
+    <p class="bg-warning text-white" style="margin-bottom:16px">This text represents a warning.</p>
+    <p class="bg-danger text-white" style="margin-bottom:16px">This text represents danger.</p>
+    <p class="bg-secondary text-white" style="margin-bottom:16px">Secondary background color.</p>
+    <p class="bg-dark text-white" style="margin-bottom:16px">Dark grey background color.</p>
+    <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+    <a target="_blank" href="tryit.asp?filename=trybs_txt_bgcolors&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top">Try it Yourself »</a>
+  </div>
+  <hr weight="1" color="grey">
+</div>
+<div id="tabel" class="container-fluidbg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Таблиці</h1><br>
+  <hr weight="1" color="grey">
+  <h2>Базові таблиці Bootstrap</h2>
+  <p>Таблиці в Bootstrap аналогічні таблицям HTML.</p>
+  <div class="alert alert-secondary">
+      <div class="w3-padding w3-white notranslate">
+      <div class="table-responsive">
+      <table class="table">
+      <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_table_basic&amp;stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself »</a>
+    </div>
+    <hr weight="1" color="grey">
+    <h2>Смужки в таблицях</h2>
+    <p>Зміни вигляд таблиці можна так:</p>
+    <div class="alert alert-secondary">
+      <div class="w3-padding w3-white notranslate">
+      <div class="table-responsive">
+      <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_table_striped&amp;stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself »</a>
+    </div>
+    <hr weight="1" color="grey">
+    <h2>Границі в таблицях</h2>
+    <p>Відображення границь таблиці задається так:</p>
+    <div class="alert alert-secondary">
+      <div class="w3-padding w3-white notranslate">
+      <div class="table-responsive">
+      <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_table_bordered&amp;stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself »</a>
+    </div>
+    <hr weight="1" color="grey">
+    <h2>Тіні в таблицях</h2>
+    <p>Задаються за допомогою <rt1>.table-hover</rt1></p>
+    <div class="aler alert-secondary">
+      <div class="w3-padding w3-white notranslate">
+      <div class="table-responsive">
+      <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+      </div>
+      <a target="_blank" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_table_hover&amp;stacked=h" class="w3-btn w3-margin-top w3-margin-bottom">Try it Yourself »</a>
+    </div>
+    <hr weight="1" color="grey">
+
+
+
+</div>
+</body>
+</html>
